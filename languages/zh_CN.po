@@ -1,11 +1,12 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: picochic\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-27 22:15+0100\n"
-"PO-Revision-Date: 2012-09-10 20:12+0800\n"
-"Last-Translator: \n"
-"Language-Team:  <niaoer@niaoer.org>\n"
+"PO-Revision-Date: 2012-09-11 19:56+0800\n"
+"Last-Translator: niaoer <niaoer@niaoer.org>\n"
+"Language-Team: niaoer <niaoer@niaoer.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -29,8 +30,7 @@ msgstr "1 条评论"
 
 #: content-quote.php:3 content-status.php:3 content-aside.php:3 content.php:7
 #: content-link.php:6 search.php:13
-#, php-format
-msgid "% Comments"
+msgid "% comments"
 msgstr "% 条评论"
 
 #: content-quote.php:8 content-status.php:8 page.php:11 content-aside.php:8
@@ -81,11 +81,15 @@ msgstr "较新文章 &raquo;"
 msgid "Sorry, nothing found."
 msgstr "抱歉，找不到您要查看的内容。"
 
+#: 404.php:5
+msgid "Error"
+msgstr "出错了……"
+
 #: index.php:29 404.php:7
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching, or one of the links below, can help."
-msgstr "我们可能无法找到您需要的内容，您可以试试下面的链接和搜索功能。"
+msgstr "我们可能无法找到您需要的内容，您可以试着搜索一下。"
 
 #: page.php:15
 msgid "More..."
@@ -223,6 +227,10 @@ msgstr "首页"
 msgid "Search results for"
 msgstr "搜索结果"
 
+#: single.php:13
+msgid "About the author"
+msgstr "本文作者"
+
 #: functions.php:358
 msgid "Link to your social profiles like twitter, facebook or flickr."
 msgstr "链接到您的社交网站，例如 Twitter、Facebook 或 Flickr"
@@ -321,7 +329,7 @@ msgstr "选项"
 
 #: includes/theme-options.php:90
 msgid "Custom color scheme"
-msgstr "自定义颜色方案"
+msgstr "链接颜色"
 
 #: includes/theme-options.php:74
 msgid "Options saved"
@@ -456,74 +464,14 @@ msgstr "默认颜色"
 msgid "Read-more-link links to read-more-tag"
 msgstr "单击 阅读更多 后跳转到指定位置"
 
-#~ msgid "Colors"
-#~ msgstr "颜色"
+#: includes/theme-options.php:151
+msgid "Show an &quot;About the Author&quot;-Box"
+msgstr "在文章末尾显示&quot;关于作者&quot;"
 
-#~ msgid "Use the WordPress-Tools to change your background color/image"
-#~ msgstr "使用 WordPress 工具更改背景颜色或图像"
+#: search.php:57
+msgid "Nothing found"
+msgstr "无搜索结果"
 
-#~ msgid "White text color"
-#~ msgstr "白色文字"
-
-#~ msgid "Hide Menu"
-#~ msgstr "隐藏菜单"
-
-#~ msgid "Hide Search"
-#~ msgstr "隐藏搜索"
-
-#~ msgid "You can generate your custom favicon on"
-#~ msgstr "您可以制作一个 favicon"
-
-#~ msgid "Upload Image"
-#~ msgstr "上传图像"
-
-#~ msgid "Upload your own favicon image"
-#~ msgstr "上传自定义 favicon 图像"
-
-#~ msgid " using the WordPress Media Library and insert the URL here."
-#~ msgstr "使用 WordPress 媒体库并插入链接"
-
-#~ msgid " Options"
-#~ msgstr " 选项"
-
-#~ msgid "Edit"
-#~ msgstr "编辑"
-
-#~ msgid "Theme Options"
-#~ msgstr "主题选项"
-
-#~ msgid " Theme Options"
-#~ msgstr " 主题选项"
-
-#~ msgid "e.g. #0000FF or blue (default link color: #009BC2)"
-#~ msgstr "例如 #0000FF 或者 blue (默认链接颜色为 #009BC2)"
-
-#~ msgid "Written on"
-#~ msgstr "发表于"
-
-#~ msgid "Category"
-#~ msgstr "分类目录"
-
-#~ msgid "No comments"
-#~ msgstr "暂无评论"
-
-#~ msgid "Picoclean"
-#~ msgstr "Picoclean"
-
-#~ msgid "Logout"
-#~ msgstr "登出"
-
-#~ msgid "Name (required)"
-#~ msgstr "名称 (必填)"
-
-#~ msgid "E-Mail (required)"
-#~ msgstr "E-Mail (必填)"
-
-#~ msgid "Send"
-#~ msgstr "发送"
-
-#~ msgid "More"
-#~ msgstr "更多"
-
-#~ msgid "Bearbeiten"
-#~ msgstr "Bearbeiten"
+#: search.php:60
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for"
+msgstr "找不到您要搜索的内容"
