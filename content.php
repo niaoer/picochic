@@ -19,7 +19,7 @@
 		<?php
 			picochic_show_post_format();
 		?>
-		<a href="<?php the_permalink() ?>"><?php the_time('Y-m-d') ?></a> &middot; <?php comments_popup_link(__('Write a comment', 'picochic'), __('1 comment', 'picochic'), __('% Comments', 'picochic')); ?>
+		<a href="<?php the_permalink() ?>"><?php the_time('Y-m-d') ?></a> &middot; <?php comments_popup_link(__('Write a comment', 'picochic'), __('1 comment', 'picochic'), __('% comments', 'picochic')); ?>
 		<?php
 			picochic_show_categories();
 			picochic_show_tags();

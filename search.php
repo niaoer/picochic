@@ -12,7 +12,7 @@
 				<div class="title">
 					<h2><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 				</div>
-					<div class="meta"><a href="<?php the_permalink() ?>"><?php the_time('Y-m-d') ?></a> &middot; <?php comments_popup_link(__('Write a comment', 'picochic'), __('1 comment', 'picochic'), __('% Comments', 'picochic')); ?>
+					<div class="meta"><a href="<?php the_permalink() ?>"><?php the_time('Y-m-d') ?></a> &middot; <?php comments_popup_link(__('Write a comment', 'picochic'), __('1 comment', 'picochic'), __('% comments', 'picochic')); ?>
 					<?php
 						picochic_show_categories();
 						picochic_show_tags();
