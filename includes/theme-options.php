@@ -148,7 +148,7 @@ function picochic_theme_options_page() {
 	</td>
 	</tr>
 
-	<tr valign="top"><th scope="row"><label for="show_about_the_author"><?php _e('Show an "About the Author"-Box', 'picochic'); ?></label></th>
+	<tr valign="top"><th scope="row"><label for="show_about_the_author"><?php _e('Show an &quot;About the Author&quot;-Box', 'picochic'); ?></label></th>
 	<td>
 	<input id="show_about_the_author" name="picochic_options[show_about_the_author]" type="checkbox" value="1" <?php checked('1', $settings['show_about_the_author']); ?> />
 	</td>
