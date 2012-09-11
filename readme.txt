@@ -1,0 +1,30 @@
+------------------------------------------------------------------------------------------------------------
+  For a detailed documentation and support please visit: http://picomol.de/picochic/
+
+
+------------------------------------------------------------------------------------------------------------
+  The Ubuntu Font (ubuntu-r) is covered by the GNU GPL (with font exception) license
+  URI: http://www.gnu.org/licenses/gpl.html
+
+
+------------------------------------------------------------------------------------------------------------
+  Thanks to elmastudio.de for the social links widget (from yoko theme)
+  http://www.elmastudio.de/
+  http://www.elmastudio.de/wordpress-themes/yoko/
+
+
+------------------------------------------------------------------------------------------------------------
+  The Social Icons are covered by the GNU GPL license
+  URI: http://www.gnu.org/licenses/gpl.html
+  Created by elmastudio.de and extended by picomol.de
+
+
+------------------------------------------------------------------------------------------------------------
+  Changelog
+
+  1.0 | 10.02.2012: Initial release
+	1.0.1 | 12.02.2012: Footer now displays the correct year number
+	1.0.3 | 02.03.2012: Bug fixes (list types), more visible headings
+	1.0.4 - 1.0.6 | 04.03.2012: Bug fixes
+	1.0.7 | 07.03.2012: Fix problem with social media widget
+	1.0.8 | 23.03.2012: Language support: ru_RU
