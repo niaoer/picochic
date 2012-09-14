@@ -1,4 +1,4 @@
-##picochic 简体中文汉化版
+## WordPress 主题 picochic 汉化版
 
 ### 使用方法
 
