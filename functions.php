@@ -287,19 +287,23 @@ class picochic_SocialLinks_Widget extends WP_Widget {
 		$fb_title = empty($instance['fb_title']) ? ' ' : apply_filters('widget_fb_title', $instance['fb_title']);
 		$fb_url = empty($instance['fb_url']) ? ' ' : apply_filters('widget_fb_url', $instance['fb_url']);
 		$googleplus_title = empty($instance['googleplus_title']) ? ' ' : apply_filters('widget_googleplus_title', $instance['googleplus_title']);
-		$googleplus_url = empty($instance['googleplus_url']) ? ' ' : apply_filters('widget_googleplus_url', $instance['googleplus_url']);		
-		$di_title = empty($instance['di_title']) ? ' ' : apply_filters('widget_di_title', $instance['di_title']);
-		$di_url = empty($instance['di_url']) ? ' ' : apply_filters('widget_di_url', $instance['di_url']);
-		$identi_title = empty($instance['identi_title']) ? ' ' : apply_filters('widget_identi_title', $instance['identi_title']);
-		$identi_url = empty($instance['identi_url']) ? ' ' : apply_filters('widget_identi_url', $instance['identi_url']);		
+		$googleplus_url = empty($instance['googleplus_url']) ? ' ' : apply_filters('widget_googleplus_url', $instance['googleplus_url']);	
+		$github_title = empty($instance['github_title']) ? ' ' : apply_filters('widget_github_title', $instance['github_title']);	
+		$github_url = empty($instance['github_url']) ? ' ' : apply_filters('widget_github_url', $instance['github_url']);		
 		$flickr_title = empty($instance['flickr_title']) ? ' ' : apply_filters('widget_flickr_title', $instance['flickr_title']);
 		$flickr_url = empty($instance['flickr_url']) ? ' ' : apply_filters('widget_flickr_url', $instance['flickr_url']);
-		$vimeo_title = empty($instance['vimeo_title']) ? ' ' : apply_filters('widget_vimeo_title', $instance['vimeo_title']);
-		$vimeo_url = empty($instance['vimeo_url']) ? ' ' : apply_filters('widget_vimeo_url', $instance['vimeo_url']);
 		$linkedin_title = empty($instance['linkedin_title']) ? ' ' : apply_filters('widget_linkedin_title', $instance['linkedin_title']);
 		$linkedin_url = empty($instance['linkedin_url']) ? ' ' : apply_filters('widget_linkedin_url', $instance['linkedin_url']);
-		$delicious_title = empty($instance['delicious_title']) ? ' ' : apply_filters('widget_delicious_title', $instance['delicious_title']);
-		$delicious_url = empty($instance['delicious_url']) ? ' ' : apply_filters('widget_delicious_url', $instance['delicious_url']);
+		$weibo_title = empty($instance['weibo_title']) ? ' ' : apply_filters('widget_weibo_title', $instance['weibo_title']);
+		$weibo_url = empty($instance['weibo_url']) ? ' ' : apply_filters('widget_weibo_url', $instance['weibo_url']);
+		$tencent_title = empty($instance['tencent_title']) ? ' ' : apply_filters('widget_tencent_title', $instance['tencent_title']);
+		$tencent_url = empty($instance['tencent_url']) ? ' ' : apply_filters('widget_tencent_url', $instance['tencent_url']);
+		$douban_title = empty($instance['douban_title']) ? ' ' : apply_filters('widget_douban_title', $instance['douban_title']);
+		$douban_url = empty($instance['douban_url']) ? ' ' : apply_filters('widget_douban_url', $instance['douban_url']);
+		$renren_title = empty($instance['renren_title']) ? ' ' : apply_filters('widget_renren_title', $instance['renren_title']);
+		$renren_url = empty($instance['renren_url']) ? ' ' : apply_filters('widget_renren_url', $instance['renren_url']);
+		$qq_title = empty($instance['qq_title']) ? ' ' : apply_filters('widget_qq_title', $instance['qq_title']);
+		$qq_url = empty($instance['qq_url']) ? ' ' : apply_filters('widget_qq_url', $instance['qq_url']);
 		
 		if ( !empty( $title ) ) { echo $before_title . $title . $after_title; };
 		echo '<ul>';
@@ -307,20 +311,21 @@ class picochic_SocialLinks_Widget extends WP_Widget {
 		if($twitter_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($twitter_url) .'" class="twitter" target="_blank">'. esc_html($twitter_title) .'</a></li>'; }
 		if($fb_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($fb_url) .'" class="facebook" target="_blank">'. esc_html($fb_title) .'</a></li>'; }
 		if($googleplus_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($googleplus_url) .'" class="googleplus" target="_blank">'. esc_html($googleplus_title) .'</a></li>'; }
-		if($di_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($di_url) .'" class="diaspora" target="_blank">'. esc_html($di_title) .'</a></li>'; }
-		if($identi_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($identi_url) .'" class="identi" target="_blank">'. esc_html($identi_title) .'</a></li>'; }	
+		if($github_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($github_url) .'" class="github" target="_blank">'. esc_html($github_title) .'</a></li>'; }
 		if($flickr_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($flickr_url) .'" class="flickr" target="_blank">'. esc_html($flickr_title) .'</a></li>'; }
-		if($vimeo_title == ' ') { echo ''; } else {  echo  '  <li class="widget_sociallinks"><a href="'. esc_url($vimeo_url) .'" class="vimeo" target="_blank">'. esc_html($vimeo_title) .'</a></li>'; }
 		if($linkedin_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($linkedin_url) .'" class="linkedin" target="_blank">'. esc_html($linkedin_title) .'</a></li>'; }
-		if($delicious_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($delicious_url) .'" class="delicious" target="_blank">'. esc_html($delicious_title) .'</a></li>'; }
+		if($weibo_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($weibo_url) .'" class="weibo" target="_blank">'. esc_html($weibo_title) .'</a></li>'; }
+		if($tencent_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($tencent_url) .'" class="tencent" target="_blank">'. esc_html($tencent_title) .'</a></li>'; }
+		if($douban_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($douban_url) .'" class="douban" target="_blank">'. esc_html($douban_title) .'</a></li>'; }
+		if($renren_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($renren_url) .'" class="renren" target="_blank">'. esc_html($renren_title) .'</a></li>'; }
+		if($qq_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. esc_url($qq_url) .'" class="qq" target="_blank">'. esc_html($qq_title) .'</a></li>'; }
 		echo '</ul>';
 		echo $after_widget;
 		
 	}
 	function update($new_instance, $old_instance) {
 		$instance = $old_instance;
-		$instance['title'] = strip_tags($new_instance['title']);
-		
+		$instance['title'] = strip_tags($new_instance['title']);		
 		$instance['rss_title'] = strip_tags($new_instance['rss_title']);
 		$instance['rss_url'] = strip_tags($new_instance['rss_url']);
 		$instance['twitter_title'] = strip_tags($new_instance['twitter_title']);
@@ -329,18 +334,22 @@ class picochic_SocialLinks_Widget extends WP_Widget {
 		$instance['fb_url'] = strip_tags($new_instance['fb_url']);
 		$instance['googleplus_title'] = strip_tags($new_instance['googleplus_title']);
 		$instance['googleplus_url'] = strip_tags($new_instance['googleplus_url']);
-		$instance['di_title'] = strip_tags($new_instance['di_title']);
-		$instance['di_url'] = strip_tags($new_instance['di_url']);
-		$instance['identi_title'] = strip_tags($new_instance['identi_title']);
-		$instance['identi_url'] = strip_tags($new_instance['identi_url']);
+		$instance['github_title'] = strip_tags($new_instance['github_title']);
+		$instance['github_url'] = strip_tags($new_instance['github_url']);
 		$instance['flickr_title'] = strip_tags($new_instance['flickr_title']);
 		$instance['flickr_url'] = strip_tags($new_instance['flickr_url']);		
-		$instance['vimeo_title'] = strip_tags($new_instance['vimeo_title']);
-		$instance['vimeo_url'] = strip_tags($new_instance['vimeo_url']);
 		$instance['linkedin_title'] = strip_tags($new_instance['linkedin_title']);
 		$instance['linkedin_url'] = strip_tags($new_instance['linkedin_url']);
-		$instance['delicious_title'] = strip_tags($new_instance['delicious_title']);
-		$instance['delicious_url'] = strip_tags($new_instance['delicious_url']);
+		$instance['weibo_title'] = strip_tags($new_instance['weibo_title']);
+		$instance['weibo_url'] = strip_tags($new_instance['weibo_url']);
+		$instance['tencent_title'] = strip_tags($new_instance['tencent_title']);
+		$instance['tencent_url'] = strip_tags($new_instance['tencent_url']);
+		$instance['douban_title'] = strip_tags($new_instance['douban_title']);
+		$instance['douban_url'] = strip_tags($new_instance['douban_url']);
+		$instance['renren_title'] = strip_tags($new_instance['renren_title']);
+		$instance['renren_url'] = strip_tags($new_instance['renren_url']);
+		$instance['qq_title'] = strip_tags($new_instance['qq_title']);
+		$instance['qq_url'] = strip_tags($new_instance['qq_url']);
 		return $instance;
 	}
 	function form($instance) {
@@ -355,18 +364,22 @@ class picochic_SocialLinks_Widget extends WP_Widget {
 			'fb_url' => '',
 			'googleplus_title' => '',
 			'googleplus_url' => '',
-			'di_title' => '',
-			'di_url' => '',
-			'identi_title' => '',
-			'identi_url' => '',			
+			'github_title' => '',
+			'github_url' => '',
 			'flickr_title' => '',
 			'flickr_url' => '',
-			'vimeo_title' => '',
-			'vimeo_url' => '',
 			'linkedin_title' => '',
 			'linkedin_url' => '',
-			'delicious_title' => '',
-			'delicious_url' => ''
+			'weibo_title' => '',
+			'weibo_url' => '',
+			'tencent_title' => '',
+			'tencent_url' => '',
+			'douban_title' => '',
+			'douban_url' => '',
+			'renren_title' => '',
+			'renren_url' => '',
+			'qq_title' => '',
+			'qq_url' => ''
 		) );
 		$title = strip_tags($instance['title']);
 		$rss_title = strip_tags($instance['rss_title']);
@@ -376,19 +389,23 @@ class picochic_SocialLinks_Widget extends WP_Widget {
 		$fb_title = strip_tags($instance['fb_title']);
 		$fb_url = strip_tags($instance['fb_url']);
 		$googleplus_title = strip_tags($instance['googleplus_title']);
-		$googleplus_url = strip_tags($instance['googleplus_url']);
-		$di_title = strip_tags($instance['di_title']);
-		$di_url = strip_tags($instance['di_url']);
-		$identi_title = strip_tags($instance['identi_title']);
-		$identi_url = strip_tags($instance['identi_url']);		
+		$googleplus_url = strip_tags($instance['googleplus_url']);	
+		$github_title = strip_tags($instance['github_title']);
+		$github_url = strip_tags($instance['github_url']);	
 		$flickr_title = strip_tags($instance['flickr_title']);
 		$flickr_url = strip_tags($instance['flickr_url']);
-		$vimeo_title = strip_tags($instance['vimeo_title']);
-		$vimeo_url = strip_tags($instance['vimeo_url']);
 		$linkedin_title = strip_tags($instance['linkedin_title']);
 		$linkedin_url = strip_tags($instance['linkedin_url']);
-		$delicious_title = strip_tags($instance['delicious_title']);
-		$delicious_url = strip_tags($instance['delicious_url']);
+		$weibo_title = strip_tags($instance['weibo_title']);
+		$weibo_url = strip_tags($instance['weibo_url']);
+		$tencent_title = strip_tags($instance['tencent_title']);
+		$tencent_url = strip_tags($instance['tencent_url']);
+		$douban_title = strip_tags($instance['douban_title']);
+		$douban_url = strip_tags($instance['douban_url']);
+		$renren_title = strip_tags($instance['renren_title']);
+		$renren_url = strip_tags($instance['renren_url']);
+		$qq_title = strip_tags($instance['qq_title']);
+		$qq_url = strip_tags($instance['qq_url']);	
 ?>
 			<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e( 'Title:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_html($title); ?>" /></label></p>
 			
@@ -397,23 +414,48 @@ class picochic_SocialLinks_Widget extends WP_Widget {
 			<p><label for="<?php echo $this->get_field_id('rss_url'); ?>"><?php _e( 'RSS  URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('rss_url'); ?>" name="<?php echo $this->get_field_name('rss_url'); ?>" type="text" value="<?php echo esc_url($rss_url); ?>" /></label></p>	
 			
 			<p><label for="<?php echo $this->get_field_id('twitter_title'); ?>"><?php _e( 'Twitter Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('twitter_title'); ?>" name="<?php echo $this->get_field_name('twitter_title'); ?>" type="text" value="<?php echo esc_html($twitter_title); ?>" /></label></p>	
+			
 			<p><label for="<?php echo $this->get_field_id('twitter_url'); ?>"><?php _e( 'Twitter  URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('twitter_url'); ?>" name="<?php echo $this->get_field_name('twitter_url'); ?>" type="text" value="<?php echo esc_url($twitter_url); ?>" /></label></p>
+			
 			<p><label for="<?php echo $this->get_field_id('fb_title'); ?>"><?php _e( 'Facebook Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('fb_title'); ?>" name="<?php echo $this->get_field_name('fb_title'); ?>" type="text" value="<?php echo esc_html($fb_title); ?>" /></label></p>
+			
 			<p><label for="<?php echo $this->get_field_id('fb_url'); ?>"><?php _e( 'Facebook URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('fb_url'); ?>" name="<?php echo $this->get_field_name('fb_url'); ?>" type="text" value="<?php echo esc_url($fb_url); ?>" /></label></p>
+			
 			<p><label for="<?php echo $this->get_field_id('googleplus_title'); ?>"><?php _e( 'Google+ Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('googleplus_title'); ?>" name="<?php echo $this->get_field_name('googleplus_title'); ?>" type="text" value="<?php echo esc_html($googleplus_title); ?>" /></label></p>
-			<p><label for="<?php echo $this->get_field_id('googleplus_url'); ?>"><?php _e( 'Google+ URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('googleplus_url'); ?>" name="<?php echo $this->get_field_name('googleplus_url'); ?>" type="text" value="<?php echo esc_url($googleplus_url); ?>" /></label></p>
-			<p><label for="<?php echo $this->get_field_id('di_title'); ?>"><?php _e( 'Diaspora Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('di_title'); ?>" name="<?php echo $this->get_field_name('di_title'); ?>" type="text" value="<?php echo esc_html($di_title); ?>" /></label></p>
-			<p><label for="<?php echo $this->get_field_id('di_url'); ?>"><?php _e( 'Diaspora URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('di_url'); ?>" name="<?php echo $this->get_field_name('di_url'); ?>" type="text" value="<?php echo esc_url($di_url); ?>" /></label></p>
-			<p><label for="<?php echo $this->get_field_id('identi_title'); ?>"><?php _e( 'Identi.ca Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('identi_title'); ?>" name="<?php echo $this->get_field_name('identi_title'); ?>" type="text" value="<?php echo esc_html($identi_title); ?>" /></label></p>
-			<p><label for="<?php echo $this->get_field_id('identi_url'); ?>"><?php _e( 'Identi.ca URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('identi_url'); ?>" name="<?php echo $this->get_field_name('identi_url'); ?>" type="text" value="<?php echo esc_url($identi_url); ?>" /></label></p>			
+			
+			<p><label for="<?php echo $this->get_field_id('googleplus_url'); ?>"><?php _e( 'Google+ URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('googleplus_url'); ?>" name="<?php echo $this->get_field_name('googleplus_url'); ?>" type="text" value="<?php echo esc_url($googleplus_url); ?>" /></label></p>	
+			
+			<p><label for="<?php echo $this->get_field_id('github_title'); ?>"><?php _e( 'github Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('github_title'); ?>" name="<?php echo $this->get_field_name('github_title'); ?>" type="text" value="<?php echo esc_html($github_title); ?>" /></label></p>
+			
+			<p><label for="<?php echo $this->get_field_id('github_url'); ?>"><?php _e( 'github URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('github_url'); ?>" name="<?php echo $this->get_field_name('github_url'); ?>" type="text" value="<?php echo esc_url($github_url); ?>" /></label></p>	
+			
 			<p><label for="<?php echo $this->get_field_id('flickr_title'); ?>"><?php _e( 'Flickr Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('flickr_title'); ?>" name="<?php echo $this->get_field_name('flickr_title'); ?>" type="text" value="<?php echo esc_html($flickr_title); ?>" /></label></p>
+			
 			<p><label for="<?php echo $this->get_field_id('flickr_url'); ?>"><?php _e( 'Flickr URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('flickr_url'); ?>" name="<?php echo $this->get_field_name('flickr_url'); ?>" type="text" value="<?php echo esc_url($flickr_url); ?>" /></label></p>
-			<p><label for="<?php echo $this->get_field_id('vimeo_title'); ?>"><?php _e( 'Vimeo Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('vimeo_title'); ?>" name="<?php echo $this->get_field_name('vimeo_title'); ?>" type="text" value="<?php echo esc_html($vimeo_title); ?>" /></label></p>	
-			<p><label for="<?php echo $this->get_field_id('vimeo_url'); ?>"><?php _e( 'Vimeo URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('vimeo_url'); ?>" name="<?php echo $this->get_field_name('vimeo_url'); ?>" type="text" value="<?php echo esc_url($vimeo_url); ?>" /></label></p>		
+			
 			<p><label for="<?php echo $this->get_field_id('linkedin_title'); ?>"><?php _e( 'LinkedIn Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('linkedin_title'); ?>" name="<?php echo $this->get_field_name('linkedin_title'); ?>" type="text" value="<?php echo esc_html($linkedin_title); ?>" /></label></p>		
+			
 			<p><label for="<?php echo $this->get_field_id('linkedin_url'); ?>"><?php _e( 'LinkedIn URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('linkedin_url'); ?>" name="<?php echo $this->get_field_name('linkedin_url'); ?>" type="text" value="<?php echo esc_url($linkedin_url); ?>" /></label></p>	
-			<p><label for="<?php echo $this->get_field_id('delicious_title'); ?>"><?php _e( 'Delicious Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('delicious_title'); ?>" name="<?php echo $this->get_field_name('delicious_title'); ?>" type="text" value="<?php echo esc_html($delicious_title); ?>" /></label></p>
-			<p><label for="<?php echo $this->get_field_id('delicious_url'); ?>"><?php _e( 'Delicious URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('delicious_url'); ?>" name="<?php echo $this->get_field_name('delicious_url'); ?>" type="text" value="<?php echo esc_url($delicious_url); ?>" /></label></p>
+			
+			<p><label for="<?php echo $this->get_field_id('weibo_title'); ?>"><?php _e( 'Weibo Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('weibo_title'); ?>" name="<?php echo $this->get_field_name('weibo_title'); ?>" type="text" value="<?php echo esc_html($weibo_title); ?>" /></label></p>
+			
+			<p><label for="<?php echo $this->get_field_id('weibo_url'); ?>"><?php _e( 'Weibo URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('weibo_url'); ?>" name="<?php echo $this->get_field_name('weibo_url'); ?>" type="text" value="<?php echo esc_url($weibo_url); ?>" /></label></p>
+			
+			<p><label for="<?php echo $this->get_field_id('tencent_title'); ?>"><?php _e( 'Tencent Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('tencent_title'); ?>" name="<?php echo $this->get_field_name('tencent_title'); ?>" type="text" value="<?php echo esc_html($tencent_title); ?>" /></label></p>
+			
+			<p><label for="<?php echo $this->get_field_id('tencent_url'); ?>"><?php _e( 'Tencent URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('tencent_url'); ?>" name="<?php echo $this->get_field_name('tencent_url'); ?>" type="text" value="<?php echo esc_url($tencent_url); ?>" /></label></p>
+			
+			<p><label for="<?php echo $this->get_field_id('douban_title'); ?>"><?php _e( 'Douban Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('douban_title'); ?>" name="<?php echo $this->get_field_name('douban_title'); ?>" type="text" value="<?php echo esc_html($douban_title); ?>" /></label></p>
+			
+			<p><label for="<?php echo $this->get_field_id('douban_url'); ?>"><?php _e( 'Douban URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('douban_url'); ?>" name="<?php echo $this->get_field_name('douban_url'); ?>" type="text" value="<?php echo esc_url($douban_url); ?>" /></label></p>
+			
+			<p><label for="<?php echo $this->get_field_id('renren_title'); ?>"><?php _e( 'Renren Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('renren_title'); ?>" name="<?php echo $this->get_field_name('renren_title'); ?>" type="text" value="<?php echo esc_html($renren_title); ?>" /></label></p>
+			
+			<p><label for="<?php echo $this->get_field_id('renren_url'); ?>"><?php _e( 'Renren URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('renren_url'); ?>" name="<?php echo $this->get_field_name('renren_url'); ?>" type="text" value="<?php echo esc_url($renren_url); ?>" /></label></p>
+			
+			<p><label for="<?php echo $this->get_field_id('qq_title'); ?>"><?php _e( 'QQ Text:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('qq_title'); ?>" name="<?php echo $this->get_field_name('qq_title'); ?>" type="text" value="<?php echo esc_html($qq_title); ?>" /></label></p>
+			
+			<p><label for="<?php echo $this->get_field_id('qq_url'); ?>"><?php _e( 'QQ URL:', 'picochic' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('qq_url'); ?>" name="<?php echo $this->get_field_name('qq_url'); ?>" type="text" value="<?php echo esc_url($qq_url); ?>" /></label></p>
 
 <?php
 	}

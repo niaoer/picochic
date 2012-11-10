@@ -4,43 +4,43 @@ msgstr ""
 "Project-Id-Version: picochic\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-27 22:15+0100\n"
-"PO-Revision-Date: 2012-09-11 19:56+0800\n"
+"PO-Revision-Date: 2012-11-09 20:38+0800\n"
 "Last-Translator: niaoer <niaoer@niaoer.org>\n"
 "Language-Team: niaoer <niaoer@niaoer.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: English\n"
+"Language: Simplified Chinese\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: content-quote.php:3
 msgid "Quote"
 msgstr "引用"
 
-#: content-quote.php:3 content-status.php:3 content-aside.php:3 content.php:7
-#: content-link.php:6 search.php:13
+#: content-quote.php:3 content-status.php:3 content-aside.php:3 content.php:22
+#: content-link.php:6 search.php:15
 msgid "Write a comment"
 msgstr "撰写评论"
 
-#: content-quote.php:3 content-status.php:3 content-aside.php:3 content.php:7
-#: content-link.php:6 search.php:13
+#: content-quote.php:3 content-status.php:3 content-aside.php:3 content.php:22
+#: content-link.php:6 search.php:15
 msgid "1 comment"
 msgstr "1 条评论"
 
-#: content-quote.php:3 content-status.php:3 content-aside.php:3 content.php:7
-#: content-link.php:6 search.php:13
+#: content-quote.php:3 content-status.php:3 content-aside.php:3 content.php:22
+#: content-link.php:6 search.php:15
 msgid "% comments"
 msgstr "% 条评论"
 
 #: content-quote.php:8 content-status.php:8 page.php:11 content-aside.php:8
-#: content.php:12 content-link.php:11 functions.php:174 functions.php:201
+#: content.php:27 content-link.php:11 functions.php:148 functions.php:175
 msgid "(Edit)"
 msgstr "(编辑)"
 
 #: content-quote.php:12 content-status.php:12 content-aside.php:12
-#: content.php:23 content.php:27 content-link.php:15 search.php:28
-#: search.php:32
+#: content.php:39 content.php:42 content.php:47 content-link.php:15
+#: search.php:28 search.php:32
 msgid "More &raquo;"
 msgstr "继续阅读 &raquo;"
 
@@ -85,7 +85,7 @@ msgstr "抱歉，找不到您要查看的内容。"
 msgid "Error"
 msgstr "出错了……"
 
-#: index.php:29 404.php:7
+#: index.php:29 404.php:8
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching, or one of the links below, can help."
@@ -95,7 +95,7 @@ msgstr "我们可能无法找到您需要的内容，您可以试着搜索一下
 msgid "More..."
 msgstr "继续阅读..."
 
-#: searchform.php:2 searchform.php:5 header.php:43 header.php:45 header.php:55
+#: searchform.php:2 searchform.php:5 header.php:40 header.php:42 header.php:60
 #: header.php:57
 msgid "Search"
 msgstr "搜索"
@@ -133,27 +133,27 @@ msgstr "菜单"
 msgid "Link"
 msgstr "链接"
 
-#: single.php:13
+#: single.php:23
 msgid "Sorry, no article found"
 msgstr "抱歉，没有找到这篇文章……"
 
-#: functions.php:35
+#: functions.php:37
 msgid "Primary Navigation"
 msgstr "导航"
 
-#: functions.php:47
+#: functions.php:49
 msgid "Sidebar 1"
 msgstr "边栏一"
 
-#: functions.php:48
+#: functions.php:50
 msgid "Will be displayed on the top sidebar or left."
 msgstr "显示在顶部或左侧"
 
-#: functions.php:55
+#: functions.php:57
 msgid "Sidebar 2"
 msgstr "边栏二"
 
-#: functions.php:56
+#: functions.php:58
 msgid "Will be displayed on the bottom sidebar or right."
 msgstr "显示在底部或右侧"
 
@@ -189,7 +189,7 @@ msgstr "车轮"
 msgid "Willow"
 msgstr "垂柳"
 
-#: functions.php:174
+#: functions.php:148
 msgid "Pingback:"
 msgstr "Pingback 引用通告："
 
@@ -198,30 +198,26 @@ msgstr "Pingback 引用通告："
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
 
-#: functions.php:196
+#: functions.php:170
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s 在 %2$s"
 
-#: functions.php:206
+#: functions.php:180
 msgid "Your comment is awaiting moderation."
 msgstr "您的评论正等待审核……"
 
-#: functions.php:212
+#: functions.php:186
 msgid "Reply"
 msgstr "回复"
 
-#: functions.php:245
+#: functions.php:228
 msgid "Categories: "
 msgstr "分类目录："
 
-#: functions.php:257
+#: functions.php:238
 msgid "Tags: "
 msgstr "标签："
-
-#: functions.php:269 functions.php:300
-msgid "Home"
-msgstr "首页"
 
 #: functions.php:283
 msgid "Search results for"
@@ -231,93 +227,109 @@ msgstr "搜索结果"
 msgid "About the author"
 msgstr "本文作者"
 
-#: functions.php:358
+#: functions.php:274
 msgid "Link to your social profiles like twitter, facebook or flickr."
 msgstr "链接到您的社交网站，例如 Twitter、Facebook 或 Flickr"
 
-#: functions.php:477
+#: functions.php:410
 msgid "Title:"
 msgstr "标题："
 
-#: functions.php:479
+#: functions.php:412
 msgid "RSS Text:"
 msgstr "RSS 标题："
 
-#: functions.php:481
+#: functions.php:414
 msgid "RSS  URL:"
 msgstr "RSS 地址："
 
-#: functions.php:483
+#: functions.php:416
 msgid "Twitter Text:"
 msgstr "Twitter 标题："
 
-#: functions.php:484
+#: functions.php:418
 msgid "Twitter  URL:"
 msgstr "Twitter 地址："
 
-#: functions.php:485
+#: functions.php:420
 msgid "Facebook Text:"
 msgstr "Facebook 标题："
 
-#: functions.php:486
+#: functions.php:422
 msgid "Facebook URL:"
 msgstr "Facebook 地址："
 
-#: functions.php:487
+#: functions.php:424
 msgid "Google+ Text:"
 msgstr "Google+ 标题："
 
-#: functions.php:488
+#: functions.php:426
 msgid "Google+ URL:"
 msgstr "Google+ 地址："
 
-#: functions.php:489
-msgid "Diaspora Text:"
-msgstr "Diaspora 标题："
+#: functions.php:428
+msgid "github Text:"
+msgstr "github 标题："
 
-#: functions.php:490
-msgid "Diaspora URL:"
-msgstr "Diaspora 地址："
+#: functions.php:430
+msgid "github URL:"
+msgstr "github 地址："
 
-#: functions.php:491
-msgid "Identi.ca Text:"
-msgstr "Identi.ca 标题："
-
-#: functions.php:492
-msgid "Identi.ca URL:"
-msgstr "Identi.ca 地址："
-
-#: functions.php:493
+#: functions.php:432
 msgid "Flickr Text:"
 msgstr "Flickr 标题："
 
-#: functions.php:494
+#: functions.php:434
 msgid "Flickr URL:"
 msgstr "Flickr 地址："
 
-#: functions.php:495
-msgid "Vimeo Text:"
-msgstr "Vimeo 标题："
-
-#: functions.php:496
-msgid "Vimeo URL:"
-msgstr "Vimeo 地址："
-
-#: functions.php:497
+#: functions.php:436
 msgid "LinkedIn Text:"
 msgstr "LinkedIn 标题："
 
-#: functions.php:498
+#: functions.php:438
 msgid "LinkedIn URL:"
 msgstr "LinkedIn 地址："
 
-#: functions.php:499
-msgid "Delicious Text:"
-msgstr "Delicious 标题："
+#: functions.php:440
+msgid "Weibo Text:"
+msgstr "新浪微博标题："
 
-#: functions.php:500
-msgid "Delicious URL:"
-msgstr "Delicious 地址："
+#: functions.php:442
+msgid "Weibo URL:"
+msgstr "新浪微博地址："
+
+#: functions.php:444
+msgid "Tencent Text:"
+msgstr "腾讯微博标题："
+
+#: functions.php:446
+msgid "Tencent URL:"
+msgstr "腾讯微博地址："
+
+#: functions.php:448
+msgid "Douban Text:"
+msgstr "豆瓣标题："
+
+#: functions.php:450
+msgid "Douban URL:"
+msgstr "豆瓣地址："
+
+#: functions.php:452
+msgid "Renren Text:"
+msgstr "人人网标题："
+
+#: functions.php:454
+msgid "Renren URL:"
+msgstr "人人网地址："
+
+#: functions.php:456
+msgid "QQ Text:"
+msgstr "QQ标题："
+
+#: functions.php:458
+msgid "QQ URL:"
+msgstr "QQ地址（http://wpa.qq.com/msgrd?v=3&uin=你的QQ号码）："
 
 #: includes/theme-options.php:23
 msgid "Use This Image"
@@ -364,19 +376,19 @@ msgid ""
 "Use this option if you use a dark background with disabled white main section"
 msgstr "取消黑色模式下的内容区域的白色背景设置"
 
-#: includes/theme-options.php:115
+#: includes/theme-options.php:109
 msgid "Header"
 msgstr "顶部"
 
-#: includes/theme-options.php:117
+#: includes/theme-options.php:111
 msgid "Custom logo"
 msgstr "自定义 Logo"
 
-#: includes/theme-options.php:120
+#: includes/theme-options.php:114
 msgid "Select or upload a logo"
 msgstr "选择或上传 Logo"
 
-#: includes/theme-options.php:122
+#: includes/theme-options.php:115
 msgid "Remove logo and show text instead"
 msgstr "移除 Logo 并用文字代替"
 
@@ -384,11 +396,11 @@ msgstr "移除 Logo 并用文字代替"
 msgid "Show logo centered"
 msgstr "Logo 居中显示"
 
-#: includes/theme-options.php:130
+#: includes/theme-options.php:119
 msgid "Will show logo centered if you set a logo"
 msgstr "将设置的 Logo 居中显示"
 
-#: includes/theme-options.php:134
+#: includes/theme-options.php:125
 msgid "Display header search"
 msgstr "使用顶部搜索框"
 
@@ -408,39 +420,39 @@ msgstr ""
 "A breadcrumb navigation will be displayed on the left side of the top menu "
 "bar"
 
-#: includes/theme-options.php:150
+#: includes/theme-options.php:131
 msgid "Other"
 msgstr "其他"
 
-#: includes/theme-options.php:152
+#: includes/theme-options.php:133
 msgid "Custom favicon"
 msgstr "自定义 favicon"
 
-#: includes/theme-options.php:155
+#: includes/theme-options.php:136
 msgid "Select or upload a favicon"
 msgstr "选择或上传 favicon"
 
-#: includes/theme-options.php:157
+#: includes/theme-options.php:137
 msgid "Remove favicon"
 msgstr "移除 favicon"
 
-#: includes/theme-options.php:157
+#: includes/theme-options.php:139
 msgid "You don't have a favicon to upload? Generate your own on"
 msgstr "没有 favicon？去这里看看"
 
-#: includes/theme-options.php:161
+#: includes/theme-options.php:143
 msgid "Custom header height"
 msgstr "自定义顶部高度"
 
-#: includes/theme-options.php:165
+#: includes/theme-options.php:147
 msgid "Default header height:"
 msgstr "顶部默认高度"
 
-#: includes/theme-options.php:165
+#: includes/theme-options.php:147
 msgid "After you changed this value you can"
 msgstr "设置后您可以"
 
-#: includes/theme-options.php:165
+#: includes/theme-options.php:147
 msgid "upload a new header image"
 msgstr "上传一个新的顶部背景图像"
 

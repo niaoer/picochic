@@ -28,3 +28,4 @@
 	1.0.4 - 1.0.6 | 04.03.2012: Bug fixes
 	1.0.7 | 07.03.2012: Fix problem with social media widget
 	1.0.8 | 23.03.2012: Language support: ru_RU
+	1.0.9 | 05.11.2012: Background color bugfix for Internet Explorer 8

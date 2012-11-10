@@ -2,7 +2,7 @@
 Theme Name: 	picochic
 Theme URI: 		http://picomol.de/picochic/
 Description: 	Picochic is a modern, responsive WordPress theme. It looks light, clean and professional. You can set your own header image and favicon. You can configure the menu bar and the link color.
-Version: 		1.0.8
+Version: 		1.0.9
 Author: 		Valentin
 Author URI: 	http://picomol.de/about/
 Tags: 			light, two-columns, right-sidebar, flexible-width, custom-colors, custom-header, custom-background, custom-menu, theme-options, sticky-post, translation-ready
@@ -11,9 +11,12 @@ License: 		GNU/GPL Version 2 or later
 License URI: 	http://www.gnu.org/licenses/gpl.html
 --------------------------------------------- */
 
+
+
 /* Google Fonts Import
 --------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
 
 /* CSS Reset 
 --------------------------------------------- */
@@ -380,7 +383,7 @@ a:hover {
 	
 blockquote {
 	background: transparent url(images/quote.png) no-repeat scroll 0 0;
-	font-style: normal;
+	font-style: italic;
 	margin: 5px 0 5px 0;
 	padding: 10px 15px 10px 60px;
 }
@@ -1009,6 +1012,7 @@ a, input, submit, textarea, button {
 		padding: 10px 10px 7px 7px;
 		width: 9em;
 		margin-bottom: 0;
+		background: #383838; /* IE8 Fallback */
 		background: rgba(41, 41, 41, 0.9);
 	}
 		
@@ -1357,26 +1361,34 @@ li.widget_sociallinks {
 	background:url(images/social/flickr-icon.png) 0 0 no-repeat!important;
 }
 
-.widget_sociallinks a.vimeo {
-	background:url(images/social/vimeo-icon.png) 0 0 no-repeat!important;
-}
-
 .widget_sociallinks a.linkedin {
 	background:url(images/social/linkedin-icon.png) 0 0 no-repeat!important;
-}
-
-.widget_sociallinks a.delicious {
-	background:url(images/social/delicious-icon.png) 0 0 no-repeat!important;
 }
 
 .widget_sociallinks a.googleplus {
 	background:url(images/social/googleplus-icon.png) 0 0 no-repeat!important;
 }
 
-.widget_sociallinks a.diaspora {
-	background:url(images/social/diaspora-icon.png) 0 0 no-repeat!important;
+.widget_sociallinks a.github {
+	background:url(images/social/github-icon.png) 0 0 no-repeat!important;
 }
 
-.widget_sociallinks a.identi {
-	background:url(images/social/identi-icon.png) 0 0 no-repeat!important;
+.widget_sociallinks a.weibo {
+	background:url(images/social/weibo-icon.png) 0 0 no-repeat!important;
+}
+
+.widget_sociallinks a.tencent {
+	background:url(images/social/tencent-icon.png) 0 0 no-repeat!important;
+}
+
+.widget_sociallinks a.douban {
+	background:url(images/social/douban-icon.png) 0 0 no-repeat!important;
+}
+
+.widget_sociallinks a.renren {
+	background:url(images/social/renren-icon.png) 0 0 no-repeat!important;
+}
+
+.widget_sociallinks a.qq {
+	background:url(images/social/qq-icon.png) 0 0 no-repeat!important;
 }
