@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: picochic\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-27 22:15+0100\n"
-"PO-Revision-Date: 2012-11-09 20:38+0800\n"
+"PO-Revision-Date: 2012-11-11 16:30+0800\n"
 "Last-Translator: niaoer <niaoer@niaoer.org>\n"
 "Language-Team: niaoer <niaoer@niaoer.org>\n"
 "MIME-Version: 1.0\n"
@@ -472,13 +472,13 @@ msgstr "文字颜色设为白色（针对黑色背景）"
 msgid "Default color"
 msgstr "默认颜色"
 
-#: includes/theme-options.php:157
-msgid "Read-more-link links to read-more-tag"
-msgstr "单击 阅读更多 后跳转到指定位置"
-
 #: includes/theme-options.php:151
 msgid "Show an &quot;About the Author&quot;-Box"
 msgstr "在文章末尾显示&quot;关于作者&quot;"
+
+#: includes/theme-options.php:157
+msgid "Read-more-link links to read-more-tag"
+msgstr "单击 阅读更多 后跳转到指定位置"
 
 #: search.php:57
 msgid "Nothing found"
