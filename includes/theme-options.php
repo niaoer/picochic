@@ -67,13 +67,12 @@ function picochic_theme_options_page() {
 
 	<div class="wrap">
 
-	<?php screen_icon(); echo '<h2>'.get_current_theme().' '.__( 'Options', 'picochic' ).'</h2>';
+	<?php screen_icon(); echo '<h2>'.wp_get_theme().' '.__( 'Options', 'picochic' ).'</h2>';
 	// This shows the page's name and an icon if one has been provided ?>
 
 	<?php if ( false !== $_REQUEST['updated'] ) : ?>
 	<div class="updated fade"><p><strong><?php _e( 'Options saved', 'picochic' ); ?></strong></p></div>
 	<?php endif; // If the form has just been submitted, this shows the notification ?>
-
 	<form method="post" action="options.php">
 
 	<?php $settings = get_option( 'picochic_options', $picochic_options ); ?>
@@ -89,7 +88,7 @@ function picochic_theme_options_page() {
 	
 	<tr valign="top"><th scope="row"><label for="custom_color"><?php _e('Custom color scheme', 'picochic'); ?></label></th>
 	<td>
-	<input id="custom_color" name="picochic_options[custom_color]" type="text" value="<?php  esc_attr_e($settings['custom_color']); ?>" />
+	<input id="custom_color" name="picochic_options[custom_color]" type="text" value="<?php  echo esc_attr($settings['custom_color']); ?>" />
 	<a href="#" class="pickcolor hide-if-no-js" id="custom_color-example"></a>
 	<input type="button" class="pickcolor button hide-if-no-js" value="<?php esc_attr_e(_e( 'Select a Color', 'picochic' )); ?>">
 	<div id="colorPickerDiv" style="z-index: 100; background:#eee; border:1px solid #ccc; position:absolute; display:none;"></div>
@@ -110,7 +109,7 @@ function picochic_theme_options_page() {
 
 	<tr valign="top"><th scope="row"><label for="custom_logo"><?php _e('Custom logo', 'picochic'); ?></label></th>
 	<td>
-	<input id="upload-logo" name="picochic_options[custom_logo]" type="text" value="<?php  esc_attr_e($settings['custom_logo']); ?>" />
+	<input id="upload-logo" name="picochic_options[custom_logo]" type="text" value="<?php echo esc_attr($settings['custom_logo']); ?>" />
 	<input type="button" class="button hide-if-no-js" id="upload-logo-button" value="<?php _e('Select or upload a logo', 'picochic'); ?>" /> 
 	<small class="description"><a href="javascript:;" id="remove-logo-button"><?php _e('Remove logo and show text instead', 'picochic'); ?></a></small>
 	</td>
@@ -132,17 +131,17 @@ function picochic_theme_options_page() {
 
 	<tr valign="top"><th scope="row"><label for="custom_favicon"><?php _e('Custom favicon', 'picochic'); ?></label></th>
 	<td>
-	<input id="upload-favicon" name="picochic_options[custom_favicon]" type="text" value="<?php  esc_attr_e($settings['custom_favicon']); ?>" />
+	<input id="upload-favicon" name="picochic_options[custom_favicon]" type="text" value="<?php echo esc_attr($settings['custom_favicon']); ?>" />
 	<input type="button" class="button hide-if-no-js" id="upload-favicon-button" value="<?php _e('Select or upload a favicon', 'picochic'); ?>" /> 
 	<small class="description"><a href="javascript:;" id="remove-favicon-button"><?php _e('Remove favicon', 'picochic'); ?></a></small>
 	<br />
-	<small><?php _e('You don\'t have a favicon to upload? Generate your own on', 'picochic'); ?> <a href="http://www.faviconr.com/" target="_blank">faviconr.com</a></small>
+	<small><?php _e('You don\'t have a favicon to upload? Generate your own on', 'picochic'); ?> <a href="<?php echo esc_url('http://www.faviconr.com/'); ?>" target="_blank">faviconr.com</a></small>
 	</td>
 	</tr>
 		
 	<tr valign="top"><th scope="row"><label for="custom_header_height"><?php _e('Custom header height', 'picochic'); ?></label></th>
 	<td>
-	<input id="custom_header_height" name="picochic_options[custom_header_height]" type="text" value="<?php esc_attr_e($settings['custom_header_height']); ?>" />
+	<input id="custom_header_height" name="picochic_options[custom_header_height]" type="text" value="<?php echo esc_attr($settings['custom_header_height']); ?>" />
 	<br />
 	<small class="description"><?php _e('Default header height:', 'picochic'); ?> <a href="javascript:;" id="custom_header_height_default">42</a> px. <?php _e('After you changed this value you can', 'picochic'); ?> <a href="<?php echo home_url(); ?>/wp-admin/themes.php?page=custom-header" target="_blank"><?php _e('upload a new header image', 'picochic'); ?></a></small>
 	</td>
@@ -166,6 +165,13 @@ function picochic_theme_options_page() {
 
 	</form>
 
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="XY5N7E3URRC2C">
+	<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="">
+	<img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+	</form>
+
 	</div>
 
 	<?php
@@ -178,7 +184,6 @@ function picochic_validate_options( $input ) {
 	
 	// We strip all tags from the text field, to avoid vulnerablilties like XSS
 	$input['custom_color'] = wp_filter_nohtml_kses($input['custom_color']);
-	$input['main_background'] = wp_filter_nohtml_kses($input['main_background']);
 	$input['custom_header_height'] = wp_filter_nohtml_kses($input['custom_header_height']);
 	$input['custom_favicon'] = esc_url_raw($input['custom_favicon']);
 	$input['custom_logo'] = esc_url_raw($input['custom_logo']);
@@ -200,7 +205,9 @@ function picochic_validate_options( $input ) {
 		$input['link_to_read_more'] = null;
 	$input['link_to_read_more'] = ($input['link_to_read_more'] == 1 ? 1 : 0);
 
-
+	if (!isset($input['main_background']))
+		$input['main_background'] = null;
+	$input['main_background'] = ($input['main_background'] == 1 ? 1 : 0);
 	return $input;
 }
 

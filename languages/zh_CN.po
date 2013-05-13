@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: picochic\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-27 22:15+0100\n"
-"PO-Revision-Date: 2012-11-11 16:30+0800\n"
-"Last-Translator: niaoer <niaoer@niaoer.org>\n"
+"PO-Revision-Date: 2013-05-13 14:16+0800\n"
+"Last-Translator: \n"
 "Language-Team: niaoer <niaoer@niaoer.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,6 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: Simplified Chinese\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #: content-quote.php:3
 msgid "Quote"
@@ -34,13 +35,13 @@ msgid "% comments"
 msgstr "% 条评论"
 
 #: content-quote.php:8 content-status.php:8 page.php:11 content-aside.php:8
-#: content.php:27 content-link.php:11 functions.php:148 functions.php:175
+#: content.php:27 content-link.php:11 functions.php:149 functions.php:176
 msgid "(Edit)"
 msgstr "(编辑)"
 
 #: content-quote.php:12 content-status.php:12 content-aside.php:12
-#: content.php:39 content.php:42 content.php:47 content-link.php:15
-#: search.php:28 search.php:32
+#: content.php:39 content.php:43 content.php:47 content-link.php:15
+#: search.php:30 search.php:34
 msgid "More &raquo;"
 msgstr "继续阅读 &raquo;"
 
@@ -69,11 +70,11 @@ msgstr "才能评论"
 msgid "Status"
 msgstr "状态"
 
-#: index.php:17
-msgid "&laquo;  Older articles"
-msgstr "&laquo;  早期文章"
+#: index.php:17 search.php:49
+msgid "&laquo; Older articles"
+msgstr "&laquo; 早期文章"
 
-#: index.php:18
+#: index.php:18 search.php:50
 msgid "Newer articles &raquo;"
 msgstr "较新文章 &raquo;"
 
@@ -95,8 +96,8 @@ msgstr "我们可能无法找到您需要的内容，您可以试着搜索一下
 msgid "More..."
 msgstr "继续阅读..."
 
-#: searchform.php:2 searchform.php:5 header.php:40 header.php:42 header.php:60
-#: header.php:57
+#: searchform.php:2 searchform.php:5 header.php:40 header.php:42 header.php:58
+#: header.php:60
 msgid "Search"
 msgstr "搜索"
 
@@ -125,7 +126,7 @@ msgstr "旁白"
 msgid "Page %s"
 msgstr "页面 %s"
 
-#: header.php:60
+#: header.php:56
 msgid "Menu"
 msgstr "菜单"
 
@@ -157,65 +158,37 @@ msgstr "边栏二"
 msgid "Will be displayed on the bottom sidebar or right."
 msgstr "显示在底部或右侧"
 
-#: functions.php:79
-msgid "Chessboard"
-msgstr "棋盘"
+#: functions.php:82
+msgid "Stripes"
+msgstr "条幅"
 
-#: functions.php:85
-msgid "Hanoi"
-msgstr "河内奇葩"
-
-#: functions.php:91
-msgid "Lanterns"
-msgstr "灯笼"
-
-#: functions.php:97
-msgid "Pine-cone"
-msgstr "松果"
-
-#: functions.php:103
-msgid "Shore"
-msgstr "海滩"
-
-#: functions.php:109
-msgid "Trolley"
-msgstr "电车"
-
-#: functions.php:115
-msgid "Wheel"
-msgstr "车轮"
-
-#: functions.php:121
-msgid "Willow"
-msgstr "垂柳"
-
-#: functions.php:148
+#: functions.php:149
 msgid "Pingback:"
 msgstr "Pingback 引用通告："
 
-#: functions.php:190
+#: functions.php:165
 #, php-format
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
 
-#: functions.php:170
+#: functions.php:171
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s 在 %2$s"
 
-#: functions.php:180
+#: functions.php:181
 msgid "Your comment is awaiting moderation."
 msgstr "您的评论正等待审核……"
 
-#: functions.php:186
+#: functions.php:187
 msgid "Reply"
 msgstr "回复"
 
-#: functions.php:228
+#: functions.php:229
 msgid "Categories: "
 msgstr "分类目录："
 
-#: functions.php:238
+#: functions.php:239
 msgid "Tags: "
 msgstr "标签："
 
@@ -227,107 +200,107 @@ msgstr "搜索结果"
 msgid "About the author"
 msgstr "本文作者"
 
-#: functions.php:274
+#: functions.php:275
 msgid "Link to your social profiles like twitter, facebook or flickr."
 msgstr "链接到您的社交网站，例如 Twitter、Facebook 或 Flickr"
 
-#: functions.php:410
+#: functions.php:413
 msgid "Title:"
 msgstr "标题："
 
-#: functions.php:412
+#: functions.php:415
 msgid "RSS Text:"
 msgstr "RSS 标题："
 
-#: functions.php:414
+#: functions.php:417
 msgid "RSS  URL:"
 msgstr "RSS 地址："
 
-#: functions.php:416
+#: functions.php:419
 msgid "Twitter Text:"
 msgstr "Twitter 标题："
 
-#: functions.php:418
+#: functions.php:421
 msgid "Twitter  URL:"
 msgstr "Twitter 地址："
 
-#: functions.php:420
+#: functions.php:423
 msgid "Facebook Text:"
 msgstr "Facebook 标题："
 
-#: functions.php:422
+#: functions.php:425
 msgid "Facebook URL:"
 msgstr "Facebook 地址："
 
-#: functions.php:424
+#: functions.php:427
 msgid "Google+ Text:"
 msgstr "Google+ 标题："
 
-#: functions.php:426
+#: functions.php:429
 msgid "Google+ URL:"
 msgstr "Google+ 地址："
 
-#: functions.php:428
+#: functions.php:431
 msgid "github Text:"
 msgstr "github 标题："
 
-#: functions.php:430
+#: functions.php:433
 msgid "github URL:"
 msgstr "github 地址："
 
-#: functions.php:432
+#: functions.php:435
 msgid "Flickr Text:"
 msgstr "Flickr 标题："
 
-#: functions.php:434
+#: functions.php:437
 msgid "Flickr URL:"
 msgstr "Flickr 地址："
 
-#: functions.php:436
+#: functions.php:439
 msgid "LinkedIn Text:"
 msgstr "LinkedIn 标题："
 
-#: functions.php:438
+#: functions.php:441
 msgid "LinkedIn URL:"
 msgstr "LinkedIn 地址："
 
-#: functions.php:440
+#: functions.php:443
 msgid "Weibo Text:"
 msgstr "新浪微博标题："
 
-#: functions.php:442
+#: functions.php:445
 msgid "Weibo URL:"
 msgstr "新浪微博地址："
 
-#: functions.php:444
+#: functions.php:447
 msgid "Tencent Text:"
 msgstr "腾讯微博标题："
 
-#: functions.php:446
+#: functions.php:449
 msgid "Tencent URL:"
 msgstr "腾讯微博地址："
 
-#: functions.php:448
+#: functions.php:451
 msgid "Douban Text:"
 msgstr "豆瓣标题："
 
-#: functions.php:450
+#: functions.php:453
 msgid "Douban URL:"
 msgstr "豆瓣地址："
 
-#: functions.php:452
+#: functions.php:455
 msgid "Renren Text:"
 msgstr "人人网标题："
 
-#: functions.php:454
+#: functions.php:457
 msgid "Renren URL:"
 msgstr "人人网地址："
 
-#: functions.php:456
+#: functions.php:459
 msgid "QQ Text:"
 msgstr "QQ标题："
 
-#: functions.php:458
+#: functions.php:461
 msgid "QQ URL:"
 msgstr "QQ地址（http://wpa.qq.com/msgrd?v=3&uin=你的QQ号码）："
 
@@ -339,7 +312,7 @@ msgstr "使用图像"
 msgid "Options"
 msgstr "选项"
 
-#: includes/theme-options.php:90
+#: includes/theme-options.php:89
 msgid "Custom color scheme"
 msgstr "链接颜色"
 
@@ -347,7 +320,7 @@ msgstr "链接颜色"
 msgid "Options saved"
 msgstr "设置已保存"
 
-#: includes/theme-options.php:88
+#: includes/theme-options.php:87
 msgid "Color and background"
 msgstr "配色与背景"
 
@@ -355,7 +328,7 @@ msgstr "配色与背景"
 msgid "Custom Link Color"
 msgstr "自定义链接颜色"
 
-#: includes/theme-options.php:94
+#: includes/theme-options.php:93
 msgid "Select a Color"
 msgstr "选择颜色"
 
@@ -363,11 +336,11 @@ msgstr "选择颜色"
 msgid "Default link color"
 msgstr "默认链接颜色"
 
-#: includes/theme-options.php:101
+#: includes/theme-options.php:100
 msgid "White background for main section"
 msgstr "内容区域使用白色背景"
 
-#: includes/theme-options.php:107
+#: includes/theme-options.php:104
 msgid "Dark mode"
 msgstr "黑色模式"
 
@@ -376,31 +349,27 @@ msgid ""
 "Use this option if you use a dark background with disabled white main section"
 msgstr "取消黑色模式下的内容区域的白色背景设置"
 
-#: includes/theme-options.php:109
+#: includes/theme-options.php:108
 msgid "Header"
 msgstr "顶部"
 
-#: includes/theme-options.php:111
+#: includes/theme-options.php:110
 msgid "Custom logo"
 msgstr "自定义 Logo"
 
-#: includes/theme-options.php:114
+#: includes/theme-options.php:113
 msgid "Select or upload a logo"
 msgstr "选择或上传 Logo"
 
-#: includes/theme-options.php:115
+#: includes/theme-options.php:114
 msgid "Remove logo and show text instead"
 msgstr "移除 Logo 并用文字代替"
 
-#: includes/theme-options.php:126
+#: includes/theme-options.php:118
 msgid "Show logo centered"
-msgstr "Logo 居中显示"
+msgstr "居中显示 Logo"
 
-#: includes/theme-options.php:119
-msgid "Will show logo centered if you set a logo"
-msgstr "将设置的 Logo 居中显示"
-
-#: includes/theme-options.php:125
+#: includes/theme-options.php:124
 msgid "Display header search"
 msgstr "使用顶部搜索框"
 
@@ -420,43 +389,43 @@ msgstr ""
 "A breadcrumb navigation will be displayed on the left side of the top menu "
 "bar"
 
-#: includes/theme-options.php:131
+#: includes/theme-options.php:130
 msgid "Other"
 msgstr "其他"
 
-#: includes/theme-options.php:133
+#: includes/theme-options.php:132
 msgid "Custom favicon"
 msgstr "自定义 favicon"
 
-#: includes/theme-options.php:136
+#: includes/theme-options.php:135
 msgid "Select or upload a favicon"
 msgstr "选择或上传 favicon"
 
-#: includes/theme-options.php:137
+#: includes/theme-options.php:136
 msgid "Remove favicon"
 msgstr "移除 favicon"
 
-#: includes/theme-options.php:139
+#: includes/theme-options.php:138
 msgid "You don't have a favicon to upload? Generate your own on"
 msgstr "没有 favicon？去这里看看"
 
-#: includes/theme-options.php:143
+#: includes/theme-options.php:142
 msgid "Custom header height"
 msgstr "自定义顶部高度"
 
-#: includes/theme-options.php:147
+#: includes/theme-options.php:146
 msgid "Default header height:"
 msgstr "顶部默认高度"
 
-#: includes/theme-options.php:147
+#: includes/theme-options.php:146
 msgid "After you changed this value you can"
 msgstr "设置后您可以"
 
-#: includes/theme-options.php:147
+#: includes/theme-options.php:146
 msgid "upload a new header image"
 msgstr "上传一个新的顶部背景图像"
 
-#: includes/theme-options.php:171
+#: includes/theme-options.php:164
 msgid "Save Options"
 msgstr "保存设置"
 
@@ -464,19 +433,19 @@ msgstr "保存设置"
 msgid "Search Results for: %s"
 msgstr "%s 的搜索结果"
 
-#: includes/theme-options.php:105
+#: includes/theme-options.php:104
 msgid "For dark backgrounds"
 msgstr "文字颜色设为白色（针对黑色背景）"
 
-#: includes/theme-options.php:97
+#: includes/theme-options.php:96
 msgid "Default color"
 msgstr "默认颜色"
 
-#: includes/theme-options.php:151
+#: includes/theme-options.php:150
 msgid "Show an &quot;About the Author&quot;-Box"
 msgstr "在文章末尾显示&quot;关于作者&quot;"
 
-#: includes/theme-options.php:157
+#: includes/theme-options.php:156
 msgid "Read-more-link links to read-more-tag"
 msgstr "单击 阅读更多 后跳转到指定位置"
 

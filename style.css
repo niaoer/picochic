@@ -1,16 +1,18 @@
 /*  
 Theme Name: 	picochic
 Theme URI: 		http://picomol.de/picochic/
-Description: 	Picochic is a modern, responsive WordPress theme. It looks light, clean and professional. You can set your own header image and favicon. You can configure the menu bar and the link color.
-Version: 		1.0.9
+Description: 	Picochic 是一款非常时尚的 WordPress 主题。界面清爽，功能强大，还可以手动设置顶部图片与网站图标、导航栏和链接颜色。
+Version: 		1.0.11.4
 Author: 		Valentin
 Author URI: 	http://picomol.de/about/
 Tags: 			light, two-columns, right-sidebar, flexible-width, custom-colors, custom-header, custom-background, custom-menu, theme-options, sticky-post, translation-ready
 
-License: 		GNU/GPL Version 2 or later
-License URI: 	http://www.gnu.org/licenses/gpl.html
---------------------------------------------- */
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+Picochic WordPress Theme, Copyright 2013 picomol.de
+Picochic is distributed under the terms of the GNU GPL
+--------------------------------------------- */
 
 
 /* Google Fonts Import
@@ -383,7 +385,7 @@ a:hover {
 	
 blockquote {
 	background: transparent url(images/quote.png) no-repeat scroll 0 0;
-	font-style: italic;
+	font-style: normal;
 	margin: 5px 0 5px 0;
 	padding: 10px 15px 10px 60px;
 }
@@ -803,8 +805,6 @@ img.alignleft {
 	background: #fff;
 }
 
-.gallery-caption {
-}
 
 .bypostauthor {
 }
@@ -907,11 +907,56 @@ a, input, submit, textarea, button {
 	float: left;
 	margin-top: 10px;
 	text-align: center;
-	width: 33%;
+	width: 30%;
 }
 
 .gallery-caption {
 	margin-left: 0;
+}
+
+.gallery-columns-2 .gallery-item {
+	width: 49%;
+}
+
+.gallery-columns-3 .gallery-item {
+	width: 33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	width: 20%;
+}
+
+.gallery-columns-5 .gallery-item {
+	width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	width: 16%;
+}
+
+.gallery-columns-7 .gallery-item {
+	width: 14%;
+}
+
+.gallery-columns-8 .gallery-item {
+	width: 12%;
+}
+
+.gallery-columns-9 .gallery-item {
+	width: 11%;
+}
+
+.gallery-columns-10 .gallery-item {
+	width: 10%;
+}
+
+.gallery-icon {
+	max-width: 90%;
+	margin: 0 auto;
 }
 
 	

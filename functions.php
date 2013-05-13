@@ -25,10 +25,10 @@ function picochic_setup() {
 
 	// Make theme available for translation
 	// Translations can be filed in the /languages/ directory
-	load_theme_textdomain( 'picochic', TEMPLATEPATH . '/languages' );
+	load_theme_textdomain( 'picochic', get_template_directory() . '/languages' );
 
 	$locale = get_locale();
-	$locale_file = TEMPLATEPATH . "/languages/$locale.php";
+	$locale_file = get_template_directory() . "/languages/$locale.php";
 	if ( is_readable( $locale_file ) )
 		require_once( $locale_file );
 
@@ -38,7 +38,7 @@ function picochic_setup() {
 	) );
 	
 	// This theme allows users to set a custom background
-	add_custom_background();
+	add_theme_support('custom-background');
 
 	// Thumbnails
 	set_post_thumbnail_size('150', '150', true);
@@ -70,7 +70,8 @@ function picochic_setup() {
 	define('HEADER_IMAGE_HEIGHT', picochic_get_settings('header_height'));
 	define('NO_HEADER_TEXT', true );
 
-	add_custom_image_header('', 'picochic_admin_header_style');
+	add_theme_support('custom-header').
+	#add_custom_image_header('', 'picochic_admin_header_style');
 
 	// Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.
 	register_default_headers( array(
@@ -325,7 +326,9 @@ class picochic_SocialLinks_Widget extends WP_Widget {
 	}
 	function update($new_instance, $old_instance) {
 		$instance = $old_instance;
-		$instance['title'] = strip_tags($new_instance['title']);		
+		$instance['title'] = strip_tags($new_instance['title']);
+		
+
 		$instance['rss_title'] = strip_tags($new_instance['rss_title']);
 		$instance['rss_url'] = strip_tags($new_instance['rss_url']);
 		$instance['twitter_title'] = strip_tags($new_instance['twitter_title']);

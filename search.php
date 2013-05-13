@@ -46,8 +46,8 @@
 		else { 
 		?>
 		<div class="navigation">
-			<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-			<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+			<div class="alignleft"><?php next_posts_link(__('&laquo; Older articles', 'picochic')) ?></div>
+			<div class="alignright"><?php previous_posts_link(__('Newer articles &raquo;', 'picochic')) ?></div>
 		</div>
 		<?php } ?>
 

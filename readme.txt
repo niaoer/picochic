@@ -22,10 +22,12 @@
 ------------------------------------------------------------------------------------------------------------
   Changelog
 
-  1.0 | 10.02.2012: Initial release
-	1.0.1 | 12.02.2012: Footer now displays the correct year number
-	1.0.3 | 02.03.2012: Bug fixes (list types), more visible headings
-	1.0.4 - 1.0.6 | 04.03.2012: Bug fixes
-	1.0.7 | 07.03.2012: Fix problem with social media widget
-	1.0.8 | 23.03.2012: Language support: ru_RU
-	1.0.9 | 05.11.2012: Background color bugfix for Internet Explorer 8
+  1.0  |  10.02.2012: Initial release
+	1.0.1  |  12.02.2012: Footer now displays the correct year number
+	1.0.3  |  02.03.2012: Bug fixes (list types), more visible headings
+	1.0.6  |  04.03.2012: Bug fixes
+	1.0.7  |  07.03.2012: Fix problem with social media widget
+	1.0.8  |  23.03.2012: Language support: ru_RU
+	1.0.9  |  05.11.2012: Background color bugfix for Internet Explorer 8
+	1.0.10 |  20.03.2013: Donate button added
+	1.0.11 |  22.03.2013: Deprecated functions removed, added some copyright and license informations
